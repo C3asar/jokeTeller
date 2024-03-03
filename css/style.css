@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #45BBDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assets {
+    display: flex;
+    flex-direction: column;
+}
+
+.assets img {
+    max-width: 500px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 16px;
+    background-color: #FF3482;
+    color: #fff;
+    box-shadow: 6px 7px 0px rgb(80, 80, 80);
+    align-self: center;
+    cursor: pointer;
+    transition: transform 100ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.btn:active {
+    box-shadow: 0 0 0;
+    transform: translate(6px, 7px);
+}
+
