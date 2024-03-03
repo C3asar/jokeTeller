@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Joke Teller</title>
 </head>
-<body>  
+
+<body>
     <div class="container">
-        <div class="assets">
+        <div class="assets flex">
             <img src="./assets/bot.gif" alt="">
-            <button class="btn">Tell me a Joke</button>
+            <div class="flex flow-content">
+                <select name="category" id="category" class="category">
+                    <option value="Any" selected>Random</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Misc">Misc</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Pun">Pun</option>
+                </select>
+                <button id="btn" class="btn">Tell me a Joke</button>
+                <div class="joke" hidden></div>
+            </div>
         </div>
-        <audio src=""></audio>
     </div>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
